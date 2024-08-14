@@ -1,0 +1,535 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lexend:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+* {
+    padding: 0; margin: 0;
+    box-sizing: border-box;
+    transition: 0.4s;
+    font-family: 'Lexend', sans-serif;
+    color: #fff;
+}
+a {
+    text-decoration: none;
+    color: #fff;
+}
+:root {
+    --bg-color: #CAFF33;
+    --grey-color: #1C1C1C;
+    --grey-2: #262626;
+}
+.cont {
+    width: 90%;
+    margin: 0 auto;
+}
+body {
+    overflow-x: hidden;
+    background-color: var(--grey-color);
+}
+/* Head img */
+.h-img {
+    position: absolute;
+    top: 0; left: 0;
+    z-index: -1;
+}
+/* Head img */
+/* Navbar css start */
+.nav-all {
+    position: sticky;
+    left: 0; right: 0; top: 0;
+    z-index: 100;
+}
+#navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--grey-2);
+    padding: 15px 20px;
+    border-radius: 40px;
+    margin: 20px auto;
+}
+.hom {
+    background-color: var(--grey-color);
+    padding: 10px;
+    border-radius: 20px;
+}
+.nav-list {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0px;
+}
+.nav-itm {
+    list-style: none;
+    margin: 0 20px;
+}
+.nav-itm a:hover {
+    color: var(--bg-color);
+}
+.nav-btn:first-child {
+    background-color: transparent;
+    border: none;
+    padding: 5px 15px;
+    border-radius: 20px;
+}
+.nav-btn:first-child a:hover {
+    color: var(--bg-color);
+}
+.nav-btn:first-child:hover {
+    background-color: var(--grey-color);
+}
+.nav-btn:last-child {
+    background-color: var(--bg-color);
+    border-radius: 20px;
+    padding: 5px 15px;
+    border: 1px solid var(--bg-color);
+}
+.nav-btn:last-child:hover {
+    background-color: transparent;
+}
+.nav-btn:last-child a:hover {
+    color: var(--bg-color);
+}
+.nav-btn:last-child a {
+    color: #000;
+}
+.nav-btns2 {
+    display: none;
+}
+.menu {
+    font-size: x-large;
+    display: none;
+}
+.x {
+    display: none;
+}
+@media screen and (max-width: 900px) {
+    #navbar {
+        position: relative;
+        width: 100%;
+    }
+    .nav-list {
+        position: absolute;
+        flex-direction: column;
+        background-color: #262626a6;
+        width: 500px;
+        top: -19px; left: -100px;
+        height: 100vh;
+        backdrop-filter: blur(30px);
+        transition: 0.6s;
+        transform: translateX(-900px);
+    }
+    .nav-o {
+        transform: translateX(0px) !important;
+    }
+    .nav-itm {
+        margin: 20px 0;
+    }
+    .nav-btns {
+        display: none;
+    }
+    .nav-btns2 {
+        display: block;
+        text-align: center;
+    }
+    .nav-btns2 button {
+        margin: 10px auto;
+    }
+    .menu {
+        display: block;
+        cursor: pointer;
+    }
+    .x {
+        display: block;
+        color: var(--bg-color);
+        font-size: xx-large;
+        position: absolute;
+        right: 10px;
+        cursor: pointer;
+    }
+}
+@media screen and (max-width: 500px) {
+    .nav-list {
+        width: 100%;
+        left: -3px; top: 0;
+    }
+}
+/* Navbar css end */
+
+/* Home css start */
+#home {
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    position: relative;
+    top: 0;
+}
+.home-all {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.home-card {
+    /* width: 700px; */
+}
+.home-card:last-child {
+    background-color: #1A1A1A;
+    padding: 10px;
+    margin-right: 150px;
+    border-radius: 10px;
+}
+.home-card-bg {
+    position: absolute;
+    right: 0;
+    z-index: -1;
+}
+.hom-verfy {
+    display: flex;
+    align-items: center;
+    background-color: var(--grey-2);
+    width: 400px;
+    padding: 10px;
+    border-radius: 20px;
+}
+.hom-verfy div {
+    margin-left: 10px;
+}
+.home-welcom {
+    margin: 20px 0;
+    font-size: 2.5em;
+    font-weight: 600;
+}
+.home-welcom span {
+    color: var(--bg-color);
+}
+.home-card p {
+    margin: 10px 0;
+    font-weight: 200;
+}
+.home-btn {
+    background-color: var(--bg-color);
+    border: 1px solid var(--bg-color);
+    padding: 10px 20px;
+    border-radius: 20px;
+    margin-top: 100px;
+}
+.home-btn:hover {
+    background-color: transparent;
+}
+.home-btn a:hover {
+    color: var(--bg-color);
+}
+.home-btn a {
+    color: #000;
+}
+.home-usd {
+    display: flex;
+    align-items: center;
+    background-color: #22251B;
+    width: 200px;
+    padding: 5px;
+    border-radius: 10px;
+    margin-bottom: -20px;
+}
+.home-usd-text div:last-child {
+    font-weight: 200;
+}
+.home-btn2 {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: var(--bg-color);
+    font-size: xx-large;
+    color: #000;
+    border: 1px solid var(--bg-color);
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.home-btn2:hover {
+    background-color: transparent;
+    color: var(--bg-color);
+}
+.home-img {
+    border: 1px solid #22251B;
+    padding: 20px;
+    width: 500px;
+}
+.h-text {
+    margin: 10px 0;
+}
+.home-money {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.money-card {
+    border: 1px solid var(--grey-2);
+    padding: 10px;
+    width: 100%;
+    background-color: var(--grey-2);
+    margin: 0 10px;
+}
+.money-img {
+    display: flex;
+    align-items: center;
+}
+.money-d {
+    border-top: 1px solid var(--grey-color);
+    margin: 10px 0;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+}
+.monay-btn {
+    width: 100%;
+    margin: 10px 0;
+    border: 1px solid #22251B;
+    padding: 5px;
+    border-radius: 20px;
+    background-color: #22251B;
+}
+.erth {
+    width: 350px;
+    display: flex;
+    align-items: center;
+    background-color: #22251B;
+    border-radius: 20px;
+    padding: 5px 10px;
+    margin: 10px 0;
+}
+@media screen and (max-width: 1500px) {
+    #home {
+        height: auto;
+        padding: 10px;
+    }
+    .home-all {
+        flex-direction: column;
+        justify-content: center;
+    }
+    .home-card:last-child {
+        margin-right: 0px;
+        margin-top: 20px;
+    }
+}
+@media screen and (max-width: 600px) {
+    .home-card:first-child {
+        text-align: center;
+    }
+    .home-btn {
+        margin-top: 40px;
+    }
+    .home-card:last-child {
+        width: 100%;
+        background-color: transparent;
+        margin: 0 auto;
+        justify-content: center;
+    }
+    .home-money {
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .home-img {
+        margin: 0 auto;
+        width: 100%;
+    }
+    .home-img2 {
+        width: 100%;
+    }
+    .cont {
+        width: 97%;
+    }
+    .home-welcom {
+        font-size: xx-large;
+    }
+    .hom-verfy {
+        width: 100%;
+    }
+}
+@media screen and (max-width: 500px) {
+    .home-card:first-child {
+        width: 100%;
+    }
+    .home-card-bg {
+        display: none;
+    }
+    .erth {
+        width: 100%;
+    }
+}
+/* Home css end */
+
+/* Main css start */
+#main h1 span {
+    color: var(--bg-color);
+}
+.main-text {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.main-btns {
+    background-color: var(--grey-2);
+    padding: 10px;
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+}
+.main-btn {
+    margin: 0 5px;
+    width: 140px;
+}
+.main-btn:first-child {
+    background-color: var(--bg-color);
+    border: 1px solid var(--bg-color);
+    color: #000;
+    padding: 5px;
+    border-radius: 20px;
+}
+.main-btn:first-child:hover {
+    background-color: transparent;
+    color: var(--bg-color);
+}
+.main-btn:last-child {
+    background-color: transparent;
+    border: none;
+    border-radius: 20px;
+    padding: 8px;
+}
+.main-btn:last-child:hover {
+    background-color: var(--grey-color);
+    color: var(--bg-color);
+}
+.main-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(430px, 1fr));
+}
+.main-card {
+    width: 430px;
+    padding: 10px;
+    text-align: center;
+    margin: 10px auto;
+}
+.main-card:nth-child(2) {
+    border-left: 1px solid var(--grey-2);
+}
+.main-card:nth-child(3) {
+    border-left: 1px solid var(--grey-2);
+}
+.main-card p {
+    font-size: small;
+}
+.main-card div {
+    font-weight: 200;
+}
+@media screen and (max-width: 992px) {
+    .main-card:nth-child(2) {
+        border-top: 1px solid var(--grey-2);
+        border-left: none;
+    }
+    .main-card:nth-child(3) {
+        border-top: 1px solid var(--grey-2);
+        border-left: none;
+    }
+}
+@media screen and (max-width: 600px) {
+    #main h1 {
+        text-align: center;
+    }
+    .main-text {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+@media screen and (max-width: 500px) {
+    .main-cards {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    .main-card {
+        width: 100%;
+    }
+    .main-btn {
+        width: 100%
+    }
+}
+/* Main css end */
+
+/* User-Casses section start */
+.user-img {
+    position: absolute;
+    z-index: 0;
+    top: 0;
+}
+.user-all {
+    background-color: var(--grey-2);
+    position: relative;
+    padding: 20px;
+    width: 600px;
+    border-radius: 20px;
+}
+.user-icons {
+    display: flex;
+    justify-content: space-between;
+}
+.user-icon {
+    width: 250px;
+    height: 150px;
+    background-color: var(--grey-color);
+    text-align: center;
+    margin: 10px 0;
+    z-index: 1;
+    padding: 5px;
+    border-radius: 10px;
+}
+.user-fo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.user-fo h1 {
+    color: var(--bg-color);
+}
+.u-fo {
+    border-left: 1px dashed var(--grey-2);
+    padding: 10px;
+}
+.user-card {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+}
+.user-btn {
+    background-color: var(--grey-2);
+    color: var(--bg-color);
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+}
+.userh1 {
+    color: var(--bg-color);
+}
+@media screen and (max-width: 992px) {
+    .user-card {
+        flex-direction: column-reverse;
+        align-items: center;
+        margin: 20px 0;
+    }
+}
+@media screen and (max-width: 640px) {
+    .user-all {
+        width: 100%;
+        margin: 10px 0;
+        padding: 10px;
+    }
+    .user-icon {
+        width: 100%;
+        margin: 10px 10px;
+    }
+    .user-num {
+        font-size: small;
+    }
+}
+/* User-Casses section end */
