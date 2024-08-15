@@ -533,3 +533,74 @@ body {
     }
 }
 /* User-Casses section end */
+
+/* Our css start */
+.our-all {
+    display: flex;
+    align-items: start;
+}
+.our-m {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.our-mob {
+    background-color: var(--grey-2);
+    margin: 20px;
+    padding: 20px;
+    border-radius: 20px;
+    height: 200px;
+}
+.our-mob p {
+    font-weight: 200;
+}
+.our-card {
+    display: flex;
+    margin: 0 10px;
+    padding: 10px;
+}
+.our-btn {
+    background-color: var(--grey-2);
+    height: 200px;
+    padding: 20px;
+}
+.our-text {
+    background-color: var(--grey-color);
+    padding: 10px;
+    margin: 10px;
+    border-radius: 20px;
+    border: 1px solid var(--grey-2);
+    cursor: pointer;
+    border-radius: 20px;
+}
+@media screen and (max-width: 1500px) {
+    .our-mob {
+        height: auto;
+    }
+    .our-btn {
+        height: auto;
+    }
+}
+@media screen and (max-width: 992px) {
+    .our-btn {
+        display: none;
+    }
+    .our-all {
+        align-items: center;
+        justify-content: center;
+    }
+    .our-card {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 10px 0;
+        padding: 0;
+    }
+}
+@media screen and (max-width: 600px) {
+    .our-mob {
+        width: 100%;
+        margin: 10px auto;
+    }
+}
+/* Our css end */
