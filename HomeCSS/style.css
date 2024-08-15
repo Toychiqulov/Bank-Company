@@ -604,3 +604,111 @@ body {
     }
 }
 /* Our css end */
+
+/* Frequnty css start */
+#frequenty h1 span {
+    color: var(--bg-color);
+}
+.frequenty-card {
+    display: flex;
+}
+.frequenty-past {
+    border: 1px solid var(--grey-2);
+    margin: 10px;
+    height: 250px;
+    padding: 10px;
+    border-radius: 10px;
+    width: 600px;
+    margin: 10px auto;
+}
+.frequenty-past div {
+    margin: 10px 0;
+    border-bottom: 1px solid var(--grey-2);
+}
+.frequenty-past p {
+    font-weight: 200;
+}
+.frequenty-btn {
+    background-color: var(--grey-2);
+    border: none;
+    padding: 10px;
+    border-radius: 20px;
+    display: block;
+    margin: 10px auto;
+}
+.frequenty-btn:hover {
+    color: var(--bg-color);
+}
+@media screen and (max-width: 1250px) {
+    .frequenty-card {
+        display: block;
+    }
+}
+@media screen and (max-width: 700px) {
+    .frequenty-past {
+        width: 100%;
+        height: auto;
+    }
+    .frequenty-past p {
+        font-size: small;
+    }
+}
+/* Frequnty css end */
+
+/* Slider css start */
+#slider h1 span {
+    color: var(--bg-color);
+}
+.slider-text {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.slider-btns {
+    padding: 7px;
+    border-radius: 20px;
+    background-color: var(--grey-2);
+}
+.slider-btns button:first-child {
+    background-color: var(--bg-color);
+    border: 1px solid var(--bg-color);
+    padding: 5px;
+    border-radius: 20px;
+    color: #000;
+    margin-right: 10px;
+}
+.slider-btns button:first-child:hover {
+    background-color: transparent;
+    color: var(--bg-color);
+}
+.slider-btns button:last-child {
+    background-color: transparent;
+    border: none;
+    padding: 5px;
+    border-radius: 20px;
+}
+.slider-btns button:last-child:hover {
+    background-color: var(--grey-color);
+}
+.swiper-slide {
+    text-align: center;
+}
+.swiper-slide div {
+    color: var(--bg-color);
+}
+.swiper-slide p {
+    margin: 10px 0;
+    font-weight: 200;
+}
+@media screen and (max-width: 1250px) {
+    .slider-text {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+@media screen and (max-width: 400px) {
+    .swiper-slide p {
+        font-size: small;
+    }
+}
+/* Slider css end */

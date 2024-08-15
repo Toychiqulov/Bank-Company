@@ -44,3 +44,23 @@ our3.addEventListener("click", () => {
     our2.style.color = "#fff";
     our1.style.color = "#fff";
 })
+
+const Fb = document.querySelector(".frequenty-btn");
+const Frqu = document.querySelector("#frequ");
+
+Frqu.style.display = "none"
+Fb.addEventListener("click", () => {
+    if (Frqu.style.display == "none") {
+        Frqu.style.display = "flex";
+    } else {
+        Frqu.style.display = "none";
+    }
+});
+var swiper = new Swiper(".mySwiper", {
+    slidesPerView: 3,
+    spaceBetween: 20,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+  });
