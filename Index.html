@@ -11,6 +11,8 @@
      <link rel="stylesheet" href="./HomeCSS/style.css">
     <!-- Icon -->
      <link rel="shortcut icon" href="./Img/Logo/logo.png" type="image/x-icon">
+     <!-- slider -->
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <title>YourBank</title>
 </head>
 <body>
@@ -31,13 +33,13 @@
                     <a href="" class="hom">Home</a>
                 </li>
                 <li class="nav-itm">
-                    <a href="">Careers</a>
+                    <a href="./Careers.html">Careers</a>
                 </li>
                 <li class="nav-itm">
-                    <a href="">About</a>
+                    <a href="./About.html">About</a>
                 </li>
                 <li class="nav-itm">
-                    <a href="">Security</a>
+                    <a href="./Security.html">Security</a>
                 </li>
                 <div class="nav-btns2">
                     <button class="nav-btn"><a href="">Sign Up</a></button>
@@ -45,8 +47,8 @@
                 </div>
             </ul>
             <div class="nav-btns">
-                <button class="nav-btn"><a href="">Sign Up</a></button>
-                <button class="nav-btn"><a href="">Login</a></button>
+                <button class="nav-btn"><a href="./SignUp.html">Sign Up</a></button>
+                <button class="nav-btn"><a href="./Login.html">Login</a></button>
             </div>
             <div class="menu">
                 <img src="./Img/HomeImg/icon/Button.png" alt="">
@@ -266,13 +268,329 @@
             insights, all designed to enhance your banking experience</p>
         <div class="our-all">
             <div class="our-card">
-                <div class="our-text">Online Banking</div>
-                <div class="our-text">Financial Tools</div>
-                <div class="our-text">Customer Support</div>
+                <div class="our-btn">
+                    <div class="our-text" id="o1">Online Banking</div>
+                    <div class="our-text" id="o2">Financial Tools</div>
+                    <div class="our-text" id="o3">Customer Support</div>
+                </div>
+            </div>
+            <div class="our-card" id="c-1">
+                <div class="our-acc">
+                    <div class="our-mob">
+                        <div class="our-m">
+                            <div>24/7 Account Access</div>
+                            <img src="./Img/HomeImg/icon/right.png" alt="">
+                        </div>
+                        <p>Enjoy the convenience of accessing your accounts anytime, <br>
+                            anywhere through our secure online banking platform. Check <br>
+                            balances, transfer funds, and pay bills with ease.</p>
+                    </div>
+                    <div class="our-mob">
+                        <div class="our-m">
+                            <div>Mobile Banking App</div>
+                            <img src="./Img/HomeImg/icon/right.png" alt="">
+                        </div>
+                        <p>Stay connected to your finances on the go with our user- <br>
+                        friendly mobile banking app. Easily manage your accounts, <br>
+                        deposit checks, and make payments from your smartphone <br>
+                        or tablet.</p>
+                    </div>
+                </div>
+                <div class="our-acc">
+                    <div class="our-mob">
+                        <div class="our-m">
+                            <div>Secure Transactions</div>
+                            <img src="./Img/HomeImg/icon/right.png" alt="">
+                        </div>
+                        <p>Rest assured knowing that your transactions are protected <br>
+                            by industry-leading security measures. We employ <br>
+                            encryption and multi-factor authentication to safeguard your <br>
+                            financial information.</p>
+                    </div>
+                    <div class="our-mob">
+                        <div class="our-m">
+                            <div>Bill Pay and Transfers</div>
+                            <img src="./Img/HomeImg/icon/right.png" alt="">
+                        </div>
+                        <p>Save time and avoid late fees with our convenient bill pay <br>
+                            service. Set up recurring payments or make one-time <br>
+                            transfers between your accounts with just a few clicks.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="our-card" id="c-2">
+                <div class="our-acc">
+                    <div class="our-mob">
+                        <div class="our-m">
+                            <div>2/7 Account Access</div>
+                            <img src="./Img/HomeImg/icon/right.png" alt="">
+                        </div>
+                        <p>Enjoy the convenience of accessing your accounts anytime, <br>
+                            anywhere through our secure online banking platform. Check <br>
+                            balances, transfer funds, and pay bills with ease.</p>
+                    </div>
+                    <div class="our-mob">
+                        <div class="our-m">
+                            <div>Mobile Banking App</div>
+                            <img src="./Img/HomeImg/icon/right.png" alt="">
+                        </div>
+                        <p>Stay connected to your finances on the go with our user- <br>
+                        friendly mobile banking app. Easily manage your accounts, <br>
+                        deposit checks, and make payments from your smartphone <br>
+                        or tablet.</p>
+                    </div>
+                </div>
+                <div class="our-acc">
+                    <div class="our-mob">
+                        <div class="our-m">
+                            <div>Secure Transactions</div>
+                            <img src="./Img/HomeImg/icon/right.png" alt="">
+                        </div>
+                        <p>Rest assured knowing that your transactions are protected <br>
+                            by industry-leading security measures. We employ <br>
+                            encryption and multi-factor authentication to safeguard your <br>
+                            financial information.</p>
+                    </div>
+                    <div class="our-mob">
+                        <div class="our-m">
+                            <div>Bill Pay and Transfers</div>
+                            <img src="./Img/HomeImg/icon/right.png" alt="">
+                        </div>
+                        <p>Save time and avoid late fees with our convenient bill pay <br>
+                            service. Set up recurring payments or make one-time <br>
+                            transfers between your accounts with just a few clicks.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="our-card" id="c-3">
+                <div class="our-acc">
+                    <div class="our-mob">
+                        <div class="our-m">
+                            <div>24/7 Account Access</div>
+                            <img src="./Img/HomeImg/icon/right.png" alt="">
+                        </div>
+                        <p>Enjoy the convenience of accessing your accounts anytime, <br>
+                            anywhere through our secure online banking platform. Check <br>
+                            balances, transfer funds, and pay bills with ease.</p>
+                    </div>
+                    <div class="our-mob">
+                        <div class="our-m">
+                            <div>Mobile Banking App</div>
+                            <img src="./Img/HomeImg/icon/right.png" alt="">
+                        </div>
+                        <p>Stay connected to your finances on the go with our user- <br>
+                        friendly mobile banking app. Easily manage your accounts, <br>
+                        deposit checks, and make payments from your smartphone <br>
+                        or tablet.</p>
+                    </div>
+                </div>
+                <div class="our-acc">
+                    <div class="our-mob">
+                        <div class="our-m">
+                            <div>Secure Transactions</div>
+                            <img src="./Img/HomeImg/icon/right.png" alt="">
+                        </div>
+                        <p>Rest assured knowing that your transactions are protected <br>
+                            by industry-leading security measures. We employ <br>
+                            encryption and multi-factor authentication to safeguard your <br>
+                            financial information.</p>
+                    </div>
+                    <div class="our-mob">
+                        <div class="our-m">
+                            <div>B Pay and Transfers</div>
+                            <img src="./Img/HomeImg/icon/right.png" alt="">
+                        </div>
+                        <p>Save time and avoid late fees with our convenient bill pay <br>
+                            service. Set up recurring payments or make one-time <br>
+                            transfers between your accounts with just a few clicks.</p>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 <!-- Our section end -->
+
+<!-- Frequently section start -->
+    <section id="frequenty" class="cont">
+        <h1><span>Frequently</span> Asked Questions</h1>
+        <p>Still you have any questions? Contact our Team via support@yourbank.com</p>
+        <div class="frequenty-all">
+            <div class="frequenty-card">
+                <div class="frequenty-past">
+                    <div>How do I open an account with YourBank?</div>
+                    <p>Opening an account with YourBank is easy. Simply visit our website and <br>
+                        click on the "Open an Account" button. Follow the prompts, provide the <br>
+                        required information, and complete the application process. If you have <br>
+                        any questions or need assistance, our customer support team is <br>
+                        available to help.</p>
+                </div>
+                <div class="frequenty-past">
+                    <div>What documents do I need to provide to apply for a loan?</div>
+                    <p>The documents required for a loan application may vary depending on <br>
+                        the type of loan you are applying for. Generally, you will need to provide <br>
+                        identification documents (such as a passport or driver's license), proof <br>
+                        of income (such as pay stubs or tax returns), and information about the <br>
+                        collateral (if applicable). Our loan officers will guide you through the <br>
+                        specific requirements during the application process.</p>
+                </div>
+            </div>
+            <div class="frequenty-card">
+                <div class="frequenty-past">
+                    <div>How can I access my accounts online?</div>
+                    <p>Accessing your accounts online is simple and secure. Visit our website <br>
+                        and click on the "Login" button. Enter your username and password to <br>
+                        access your accounts. If you haven't registered for online banking, click <br>
+                        on the "Enroll Now" button and follow the registration process. If you <br>
+                        need assistance, our customer support team is available to guide you.</p>
+                </div>
+                <div class="frequenty-past">
+                    <div>Are my transactions and personal information secure?</div>
+                    <p>At YourBank, we prioritize the security of your transactions and personal <br>
+                        information. We employ industry-leading encryption and multi-factor <br>
+                        authentication to ensure that your data is protected. Additionally, we <br>
+                        regularly update our security measures to stay ahead of emerging <br>
+                        threats. You can bank with confidence knowing that we have robust <br>
+                        security systems in place.</p>
+                </div>
+            </div>
+            <div class="frequenty-card" id="frequ">
+                <div class="frequenty-past">
+                    <div>How can I access my accounts online?</div>
+                    <p>Accessing your accounts online is simple and secure. Visit our website <br>
+                        and click on the "Login" button. Enter your username and password to <br>
+                        access your accounts. If you haven't registered for online banking, click <br>
+                        on the "Enroll Now" button and follow the registration process. If you <br>
+                        need assistance, our customer support team is available to guide you.</p>
+                </div>
+                <div class="frequenty-past">
+                    <div>Are my transactions and personal information secure?</div>
+                    <p>At YourBank, we prioritize the security of your transactions and personal <br>
+                        information. We employ industry-leading encryption and multi-factor <br>
+                        authentication to ensure that your data is protected. Additionally, we <br>
+                        regularly update our security measures to stay ahead of emerging <br>
+                        threats. You can bank with confidence knowing that we have robust <br>
+                        security systems in place.</p>
+                </div>
+            </div>
+        </div>
+        <button class="frequenty-btn">Load All FAQ’s <img src="./Img/HomeImg/icon/Vector 9.png" alt=""></button>
+    </section>
+<!-- Frequently section end -->
+
+<!-- Slider section start -->
+    <section id="slider" class="cont">
+        <h1>Our <span>Testimonials</span></h1>
+        <div class="slider-text">
+            <p>Discover how YourBank has transformed lives with innovative digital solutions and personalized customer <br>
+                service. See why our clients trust us for a secure and prosperous financial journey</p>
+            <div class="slider-btns">
+                <button>For Individuals</button>
+                <button>For Businesses</button>
+            </div>
+        </div>
+        <div class="slider-all">
+            <!-- <img src="./Img/HomeImg/icon/slid.png" class="slider-b" alt="" id="left"> -->
+            <div class="slider-cards">
+                <div class="slider-card">
+                    <img src="./Img/HomeImg/icon/qo'sh.png" alt="">
+                    <p>I recently started my own business, and <br>
+                        YourBank has been instrumental in helping <br>
+                        me set up my business accounts and secure <br>
+                        the financing I needed. Their expert guidance <br>
+                        and tailored solutions have been invaluable.</p>
+                    <div>John D</div>
+                </div>
+                <div class="slider-card">
+                    <img src="./Img/HomeImg/icon/qo'sh.png" alt="">
+                    <p>I recently started my own business, and <br>
+                        YourBank has been instrumental in helping <br>
+                        me set up my business accounts and secure <br>
+                        the financing I needed. Their expert guidance <br>
+                        and tailored solutions have been invaluable.</p>
+                    <div>John D</div>
+                </div>
+                <div class="slider-card">
+                    <img src="./Img/HomeImg/icon/qo'sh.png" alt="">
+                    <p>I recently started my own business, and <br>
+                        YourBank has been instrumental in helping <br>
+                        me set up my business accounts and secure <br>
+                        the financing I needed. Their expert guidance <br>
+                        and tailored solutions have been invaluable.</p>
+                    <div>John D</div>
+                </div>
+                <div class="slider-card">
+                    <img src="./Img/HomeImg/icon/qo'sh.png" alt="">
+                    <p>I recently started my own business, and <br>
+                        YourBank has been instrumental in helping <br>
+                        me set up my business accounts and secure <br>
+                        the financing I needed. Their expert guidance <br>
+                        and tailored solutions have been invaluable.</p>
+                    <div>John D</div>
+                </div>
+                <div class="slider-card">
+                    <img src="./Img/HomeImg/icon/qo'sh.png" alt="">
+                    <p>I recently started my own business, and <br>
+                        YourBank has been instrumental in helping <br>
+                        me set up my business accounts and secure <br>
+                        the financing I needed. Their expert guidance <br>
+                        and tailored solutions have been invaluable.</p>
+                    <div>John D</div>
+                </div>
+                <div class="slider-card">
+                    <img src="./Img/HomeImg/icon/qo'sh.png" alt="">
+                    <p>I recently started my own business, and <br>
+                        YourBank has been instrumental in helping <br>
+                        me set up my business accounts and secure <br>
+                        the financing I needed. Their expert guidance <br>
+                        and tailored solutions have been invaluable.</p>
+                    <div>John D</div>
+                </div>
+            </div>
+            <!-- <img src="./Img/HomeImg/icon/slider2.png" class="slider-b" alt="" id="right"> -->
+        </div>
+    </section>
+<!-- Slider section end -->
+
+<!-- financial section start -->
+    <section id="financial" class="cont">
+        <div class="financial-all">
+        <div class="financial-card">
+            <h1>Start your financial journey with <span>YourBank today!</span></h1>
+            <p>Ready to take control of your finances? Join YourBank now, and let us help you achieve your financial goals with our tailored <br>
+                solutions and exceptional customer service</p>
+        </div>
+        <button class="financial-btn"><a href="./SignUp.html">Open Account</a></button>
+        </div>
+    </section>
+<!-- financial section end -->
+
+<!-- Footer c=section start -->
+ <footer id="footer">
+    <img src="./Img/HomeImg/icon/Logo-1.png" alt="">
+    <div class="footer-card">
+        <a href="">Home</a>
+        <a href="./Careers.html">Careers</a>
+        <a href="./About.html">About</a>
+        <a href="./Security.html">Security</a>
+    </div>
+    <div class="footer-mobil">
+        <a href="mailto:hello@skillbirdge.com"><i class="fa-solid fa-envelope"></i> hello@skillbirdge.com</a>
+        <a href="tel:+91 91813 23 2309"><i class="fa-solid fa-phone"></i> +91 91813 23 2309</a>
+        <a href="https://maps.app.goo.gl/bSnuGG2Uf54yGEjBA"><i class="fa-solid fa-location-dot"></i> Somewhere in the World</a>
+    </div>
+    <div class="footer-all cont">
+        <div class="footer-icon">
+            <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://x.com/?lang=en"><i class="fa-brands fa-twitter"></i></a>
+            <a href="https://uz.linkedin.com/"><i class="fa-brands fa-linkedin"></i></a>
+        </div>
+        <div class="f-text">YourBank All Rights Reserved</div>
+        <div class="prive">Privacy Policy | Terms of Service</div>
+    </div>
+ </footer>
+<!-- Footer c=section end -->
+<!-- Slider link -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 <!-- Script -->
     <script src="./Js/HomeJS/Home.js"></script>
 </body>

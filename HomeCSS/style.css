@@ -534,3 +534,321 @@ body {
     }
 }
 /* User-Casses section end */
+
+/* Our css start */
+.our-all {
+    display: flex;
+    align-items: start;
+}
+.our-m {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.our-mob {
+    background-color: var(--grey-2);
+    margin: 20px;
+    padding: 20px;
+    border-radius: 20px;
+    height: 200px;
+}
+.our-mob p {
+    font-weight: 200;
+}
+.our-card {
+    display: flex;
+    margin: 0 10px;
+    padding: 10px;
+}
+.our-btn {
+    background-color: var(--grey-2);
+    height: 200px;
+    padding: 20px;
+}
+.our-text {
+    background-color: var(--grey-color);
+    padding: 10px;
+    margin: 10px;
+    border-radius: 20px;
+    border: 1px solid var(--grey-2);
+    cursor: pointer;
+    border-radius: 20px;
+}
+@media screen and (max-width: 1500px) {
+    .our-mob {
+        height: auto;
+    }
+    .our-btn {
+        height: auto;
+    }
+}
+@media screen and (max-width: 992px) {
+    .our-btn {
+        display: none;
+    }
+    .our-all {
+        align-items: center;
+        justify-content: center;
+    }
+    .our-card {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 10px 0;
+        padding: 0;
+    }
+}
+@media screen and (max-width: 600px) {
+    .our-mob {
+        width: 100%;
+        margin: 10px auto;
+    }
+}
+/* Our css end */
+
+/* Frequnty css start */
+#frequenty h1 span {
+    color: var(--bg-color);
+}
+.frequenty-card {
+    display: flex;
+}
+.frequenty-past {
+    border: 1px solid var(--grey-2);
+    margin: 10px;
+    height: 250px;
+    padding: 10px;
+    border-radius: 10px;
+    width: 600px;
+    margin: 10px auto;
+}
+.frequenty-past div {
+    margin: 10px 0;
+    border-bottom: 1px solid var(--grey-2);
+}
+.frequenty-past p {
+    font-weight: 200;
+}
+.frequenty-btn {
+    background-color: var(--grey-2);
+    border: none;
+    padding: 10px;
+    border-radius: 20px;
+    display: block;
+    margin: 10px auto;
+}
+.frequenty-btn:hover {
+    color: var(--bg-color);
+}
+@media screen and (max-width: 1250px) {
+    .frequenty-card {
+        display: block;
+    }
+}
+@media screen and (max-width: 700px) {
+    .frequenty-past {
+        width: 100%;
+        height: auto;
+    }
+    .frequenty-past p {
+        font-size: small;
+    }
+}
+/* Frequnty css end */
+
+/* Slider css start */
+#slider h1 span {
+    color: var(--bg-color);
+}
+.slider-text {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.slider-btns {
+    padding: 7px;
+    border-radius: 20px;
+    background-color: var(--grey-2);
+}
+.slider-btns button:first-child {
+    background-color: var(--bg-color);
+    border: 1px solid var(--bg-color);
+    padding: 5px;
+    border-radius: 20px;
+    color: #000;
+    margin-right: 10px;
+}
+.slider-btns button:first-child:hover {
+    background-color: transparent;
+    color: var(--bg-color);
+}
+.slider-btns button:last-child {
+    background-color: transparent;
+    border: none;
+    padding: 5px;
+    border-radius: 20px;
+}
+.slider-btns button:last-child:hover {
+    background-color: var(--grey-color);
+}
+.slider-all {
+    position: relative;
+    scroll-behavior: smooth;
+}
+.slider-cards {
+    display: flex;
+    white-space: nowrap;
+    overflow-x: hidden;
+    width: 68%;
+    margin: 0 auto;
+}
+.slider-card {
+    text-align: center;
+    width: 400px;
+    height: 250px;
+    margin: 0 15px;
+}
+.slider-card div {
+    color: var(--bg-color);
+}
+.slider-b {
+    top: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    cursor: pointer;
+}
+#right {
+    right: 40px;
+}
+@media screen and (max-width: 1250px) {
+    .slider-text {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+@media screen and (max-width: 700px) {
+    .slider-cards {
+        width: 100%;
+    }
+}
+@media screen and (max-width: 400px) {
+    .swiper-slide p {
+        font-size: small;
+    }
+}
+/* Slider css end */
+
+/* financial css start */
+.financial-all {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--grey-2);
+    padding: 20px;
+    border-radius: 30px;
+}
+.financial-card h1 span {
+    color: var(--bg-color);
+}
+.financial-btn {
+    background-color: var(--bg-color);
+    padding: 15px 10px;
+    border: 1px solid var(--bg-color);
+    border-radius: 30px;
+    width: 150px;
+}
+.financial-btn:hover {
+    background-color: transparent;
+}
+.financial-btn a:hover {
+    color: var(--bg-color);
+}
+.financial-btn a {
+    color: #000;
+}
+@media screen and (max-width: 1150px) {
+    .financial-all {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+@media screen and (max-width: 600px) {
+    .financial-card h1 {
+        font-size: x-large;
+    }
+}
+/* financial css end */
+
+/* Footer css start */
+#footer {
+    background-color: var(--grey-2);
+    margin-top: 30px;
+    padding: 20px;
+    text-align: center;
+}
+.footer-mobil {
+    margin-top: 20px;
+}
+.footer-mobil i {
+    color: var(--bg-color);
+    margin-right: 10px;
+}
+.footer-mobil a{
+    margin-left: 10px;
+}
+.footer-card {
+    margin-top: 20px;
+}
+.footer-card a {
+    margin: 0 10px;
+}
+.footer-all {
+    width: 100%;
+    display: flex;
+    background-color: var(--grey-color);
+    padding: 10px;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 30px;
+    border-radius: 20px;
+}
+.footer-icon {
+    display: flex;
+}
+.footer-icon i {
+    width: 40px;
+    height: 40px;
+    margin: 0 10px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #000;
+    background-color: var(--bg-color);
+}
+.f-text {
+    color: gray;
+}
+.prive {
+    color: gray;
+}
+@media screen and (max-width: 760px) {
+    .footer-all {
+        flex-direction: column;
+    }
+    .footer-icon {
+        margin-top: -25px;
+    }
+    .f-text {
+        margin: 10px 0;
+    }
+    .footer-mobil {
+        border-top: 1px solid var(--grey-color);
+        padding: 10px 0 0 0;
+    }
+    .footer-card {
+        border-top: 1px solid var(--grey-color);
+        padding: 10px 0 0 0;
+    }
+}
+/* Footer css end */
