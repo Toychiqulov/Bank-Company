@@ -690,15 +690,31 @@ body {
 .slider-btns button:last-child:hover {
     background-color: var(--grey-color);
 }
-.swiper-slide {
+.slider-all {
+    position: relative;
+    scroll-behavior: smooth;
+}
+.slider-cards {
+    display: flex;
+    white-space: nowrap;
+    overflow-x: hidden;
+    width: 68%;
+    margin: 0 auto;
+}
+.slider-card {
     text-align: center;
+    width: 400px;
+    height: 250px;
+    margin: 0 15px;
 }
-.swiper-slide div {
-    color: var(--bg-color);
+.slider-b {
+    top: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    cursor: pointer;
 }
-.swiper-slide p {
-    margin: 10px 0;
-    font-weight: 200;
+#right {
+    right: 40px;
 }
 @media screen and (max-width: 1250px) {
     .slider-text {

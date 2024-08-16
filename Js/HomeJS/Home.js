@@ -56,11 +56,36 @@ Fb.addEventListener("click", () => {
         Frqu.style.display = "none";
     }
 });
-var swiper = new Swiper(".mySwiper", {
-    slidesPerView: 3,
-    spaceBetween: 20,
-    pagination: {
-      el: ".swiper-pagination",
-      clickable: true,
-    },
-  });
+
+const slider = document.querySelector(".slider-cards");
+const SlidIcon = document.querySelectorAll(".slider-all .slider-b");
+const FirstCard = slider.querySelectorAll(".slider-card")[0];
+
+let First = FirstCard.clientWidth + 0;
+
+SlidIcon.forEach(icon => {
+    icon.addEventListener("click", () => {
+        slider.scrollLeft += icon.id == "left" ? -First : First
+        console.log(slider);
+        
+    })
+})
+let Start = false, prevX, prevScrollLeft;
+const dStart = (e) => {
+    Start = true;
+    prevX = e.pageX;
+    prevScrollLeft = slider.scrollLeft;
+}
+const Slid = (e) => {
+    if(!Start) return;
+    e.preventDefault();
+    let positon = e.pageX - prevX;
+    slider.scrollLeft = prevScrollLeft - positon;
+}
+const dStop = () => {
+    Start = false;
+}
+
+slider.addEventListener("mousedown", dStart);
+slider.addEventListener("mousemove", Slid);
+slider.addEventListener("mouseup", dStop);
