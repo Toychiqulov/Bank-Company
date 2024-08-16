@@ -707,6 +707,9 @@ body {
     height: 250px;
     margin: 0 15px;
 }
+.slider-card div {
+    color: var(--bg-color);
+}
 .slider-b {
     top: 50%;
     transform: translateX(-50%);
@@ -722,9 +725,129 @@ body {
         text-align: center;
     }
 }
+@media screen and (max-width: 700px) {
+    .slider-cards {
+        width: 100%;
+    }
+}
 @media screen and (max-width: 400px) {
     .swiper-slide p {
         font-size: small;
     }
 }
 /* Slider css end */
+
+/* financial css start */
+.financial-all {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--grey-2);
+    padding: 20px;
+    border-radius: 30px;
+}
+.financial-card h1 span {
+    color: var(--bg-color);
+}
+.financial-btn {
+    background-color: var(--bg-color);
+    padding: 15px 10px;
+    border: 1px solid var(--bg-color);
+    border-radius: 30px;
+    width: 150px;
+}
+.financial-btn:hover {
+    background-color: transparent;
+}
+.financial-btn a:hover {
+    color: var(--bg-color);
+}
+.financial-btn a {
+    color: #000;
+}
+@media screen and (max-width: 1150px) {
+    .financial-all {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+@media screen and (max-width: 600px) {
+    .financial-card h1 {
+        font-size: x-large;
+    }
+}
+/* financial css end */
+
+/* Footer css start */
+#footer {
+    background-color: var(--grey-2);
+    margin-top: 30px;
+    padding: 20px;
+    text-align: center;
+}
+.footer-mobil {
+    margin-top: 20px;
+}
+.footer-mobil i {
+    color: var(--bg-color);
+    margin-right: 10px;
+}
+.footer-mobil a{
+    margin-left: 10px;
+}
+.footer-card {
+    margin-top: 20px;
+}
+.footer-card a {
+    margin: 0 10px;
+}
+.footer-all {
+    width: 100%;
+    display: flex;
+    background-color: var(--grey-color);
+    padding: 10px;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 30px;
+    border-radius: 20px;
+}
+.footer-icon {
+    display: flex;
+}
+.footer-icon i {
+    width: 40px;
+    height: 40px;
+    margin: 0 10px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #000;
+    background-color: var(--bg-color);
+}
+.f-text {
+    color: gray;
+}
+.prive {
+    color: gray;
+}
+@media screen and (max-width: 760px) {
+    .footer-all {
+        flex-direction: column;
+    }
+    .footer-icon {
+        margin-top: -25px;
+    }
+    .f-text {
+        margin: 10px 0;
+    }
+    .footer-mobil {
+        border-top: 1px solid var(--grey-color);
+        padding: 10px 0 0 0;
+    }
+    .footer-card {
+        border-top: 1px solid var(--grey-color);
+        padding: 10px 0 0 0;
+    }
+}
+/* Footer css end */

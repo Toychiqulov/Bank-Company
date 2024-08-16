@@ -69,7 +69,7 @@ SlidIcon.forEach(icon => {
         console.log(slider);
         
     })
-})
+});
 let Start = false, prevX, prevScrollLeft;
 const dStart = (e) => {
     Start = true;
